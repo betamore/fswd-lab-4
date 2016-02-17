@@ -1,0 +1,20 @@
+{
+  "name": "fswd-winter-2016-lab-4",
+  "version": "1.0.0",
+  "description": "1. Fork the repository to your own Github account. 2. Clone your fork to your own machine. 3. Navigate to the clone on your machine and run `npm install`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./lib/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
