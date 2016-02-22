@@ -12,7 +12,7 @@ We already implemented a GET request in the previous labs. Remember:
     app.get("/", function(request, response) {
         response.end("Hello world!");
     });
-    
+
     app.get('/:name', function(request, response) {
         response.end('Hello, ' + request.params.name + '!');
     });
@@ -42,7 +42,7 @@ url query string parameters are also extracted and made available in
 the request object (via `params`, like `name` was).
 
 So the `lastName` field could be accessed with
-`request.params.lastName`.
+`request.query.lastName`.
 
 ### Use some query strings
 
@@ -90,7 +90,7 @@ Try entering a new to do item in the form a clicking the add button. Doesn't wor
 
 With the addition of the `body-parser` express middleware (already
 incorporated), you can access the POST data with `request.body`. It
-acts like `request.params`, in that it has fields and values.
+acts like `request.query`, in that it has fields and values.
 
 Update the handler for the `/todo/new` url by having it output `Added
 to do: <value of todo field>`.
