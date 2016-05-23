@@ -4,6 +4,9 @@ $(function() {
     // text box
     var newTodo = $('input').val();
     var newTodoEl = $("<li>" + newTodo + "</li>");
+    newTodoEl.click(function() {
+      $(this).hide();
+    });
     $("ul").append(newTodoEl);
     $('input').val("");
 
