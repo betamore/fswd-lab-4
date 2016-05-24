@@ -1,0 +1,15 @@
+extends ./layout.jade
+
+block body
+  p
+    | Hello, #{name} 
+    if lastName
+      | #{lastName}
+    | !
+  if inseam
+    if inseam < 26
+      p How is the weather down there?
+    else if inseam > 34
+      p Wow, you are tall!
+    else
+      p And I understand your inseam is #{inseam}" inches!
