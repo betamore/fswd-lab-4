@@ -1,15 +1,16 @@
 {
-  "name": "fswd-winter-2016-lab-4",
+  "name": "fswd-lab-4",
   "version": "1.0.0",
   "description": "1. Fork the repository to your own Github account. 2. Clone your fork to your own machine. 3. Navigate to the clone on your machine and run `npm install`",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore . || exit 0",
+    "lint": "eslint --ignore-path .gitignore .",
     "test": "NODE_ENV=test istanbul cover _mocha",
     "dev": "NODE_ENV=development node ./lib/index.js",
     "start": "node ./lib/index.js",
     "jspm": "jspm",
-    "postinstall": "jspm install"
+    "postinstall": "jspm install",
+    "coverage-report": "opn coverage/lcov-report/index.html"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "eslint": "^3.15.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.1.2",
+    "opn-cli": "^3.1.0",
     "supertest": "^3.0.0"
   },
   "jspm": {

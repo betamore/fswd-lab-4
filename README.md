@@ -11,18 +11,21 @@
 
 We already implemented a GET request in the previous labs. Remember:
 
-    app.get("/", function(request, response) {
-        response.end("Hello world!");
-    });
+```javascript
+// Replaced by the public/index.html file
+app.get('/', function(request, response) {
+    response.end("Hello world!");
+});
 
-    app.get('/:name', function(request, response) {
-        response.end('Hello, ' + request.params.name + '!');
-    });
+app.get('/:name', function(request, response) {
+    response.end('Hello, ' + request.params.name + '!');
+});
+```
 
 Those are both GET requests!
 
 But what if we need the user to pass in additional information? We
-could make the route (the `"/"` and `"/:name"` part of the code)
+could make the route (the `'/'` and `'/:name'` part of the code)
 longer. What if the information we need has some default values
 (i.e. not all of it is guaranteed to be there)? Are we going to need
 to construct every possible combination of request parameters? That

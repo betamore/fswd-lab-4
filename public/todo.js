@@ -1,15 +1,6 @@
-$(function() {
-  $('button.btn').click(function(evt) {
-    // newTodo is what the user typed into the
-    // text box
-    var newTodo = $('input').val();
-    var newTodoEl = $("<li>" + newTodo + "</li>");
-    newTodoEl.click(function() {
-      $(this).hide();
-    });
-    $("ul").append(newTodoEl);
-    $('input').val("");
+require('bootstrap');
+require('bootstrap/css/bootstrap.css!');
+require('bootstrap/css/bootstrap-theme.css!');
 
-    evt.preventDefault();
-  });
-});
+var $ = require('jquery');
+window.$ = $;
