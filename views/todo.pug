@@ -1,0 +1,13 @@
+extends ./layout.jade
+
+block body
+  .container
+  form(method='DELETE' action='/todo/delete/')
+    ul
+      each todo, i in todoList
+        li #[button.btn.btn-danger(value= i name='todo' type='Submit') X] #{todo}
+
+  form(method='POST' action='/todo/new')
+    div.form-group
+      input.form-control(type='text', name='todo' placeholder='What do you need to get done?')
+    button.btn.btn-primary(type='Submit') Add Todo
