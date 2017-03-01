@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.16.0",
+    "body-parser": "^1.17.0",
     "express": "^4.13.4",
     "jspm": "^0.16.45",
     "morgan": "^1.8.0",
