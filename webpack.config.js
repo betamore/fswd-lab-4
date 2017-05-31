@@ -1,5 +1,12 @@
+var path = require('path');
+
 module.exports = {
   entry: './app/index.js',
+  output: {
+      path: path.join(__dirname, 'public'),
+      publicPath: '/',
+      filename: 'bundle.js'
+  },
   module: {
     loaders: [
       // the url-loader uses DataUrls.
