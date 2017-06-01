@@ -1,0 +1,9 @@
+extends ./layout
+
+block body
+  h1 Hello world!!!!!
+  p This is coming from the <code>views/index.pug</code> file
+
+  form(method="POST" action="/my-form")
+    input(type="text" name="input")
+    button(type="submit") Submit
