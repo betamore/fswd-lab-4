@@ -43,6 +43,6 @@
     "supertest": "^3.0.0",
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
-    "webpack-dev-middleware": "^1.10.2"
+    "webpack-dev-middleware": "^2.0.4"
   }
 }
