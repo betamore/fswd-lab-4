@@ -38,7 +38,7 @@
     "nyc": "^11.0.0",
     "opn-cli": "^3.1.0",
     "resolve-url-loader": "^2.0.2",
-    "sass-loader": "^6.0.5",
+    "sass-loader": "^7.0.2",
     "style-loader": "^0.18.1",
     "supertest": "^3.0.0",
     "url-loader": "^0.5.8",
