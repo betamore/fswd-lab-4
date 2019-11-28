@@ -39,7 +39,7 @@
     "opn-cli": "^3.1.0",
     "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.5",
-    "style-loader": "^0.18.1",
+    "style-loader": "^1.0.1",
     "supertest": "^3.0.0",
     "url-loader": "^0.5.8",
     "webpack": "^2.6.1",
